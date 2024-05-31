@@ -1,5 +1,10 @@
 all:
 
+松羅湖及太加縱走:
+	ruby generate.rb 松羅湖及太加縱走/milestone.yaml
+	ruby generate.rb 松羅湖及太加縱走/blank.yaml
+.PHONY: 松羅湖及太加縱走
+
 白姑大山:
 	ruby generate.rb 白姑大山/milestone.yaml
 	ruby generate.rb 白姑大山/blank.yaml
