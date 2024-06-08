@@ -27,14 +27,15 @@
      inkscape:zoom="1.5500842"
      inkscape:cx="213.53679"
      inkscape:cy="217.08498"
-     inkscape:window-width="1920"
-     inkscape:window-height="1043"
-     inkscape:window-x="1920"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:window-width="1452"
+     inkscape:window-height="773"
+     inkscape:window-x="2029"
+     inkscape:window-y="126"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer2"
      inkscape:showpageshadow="2"
-     inkscape:deskcolor="#d1d1d1" />
+     inkscape:deskcolor="#d1d1d1"
+     showguides="false" />
   <defs
      id="defs4198">
     <rect
@@ -268,9 +269,9 @@
        x="92.812935"
        y="0"
        inkscape:label="notes_bottom_left"><tspan
-         x="125.58527"
+         x="96.068624"
          y="343.09746"
-         id="tspan22">左下角備註</tspan></text>
+         id="tspan22">WGS84 N緯度 E經度</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0,-0.26458333,0.26458333,0,1.1263996,89.478699)"
@@ -279,9 +280,9 @@
        x="92.812935"
        y="0"
        inkscape:label="notes_bottom_right"><tspan
-         x="122.09211"
+         x="94.034779"
          y="343.09746"
-         id="tspan23">右下角備註</tspan></text>
+         id="tspan23">TWD97 X東距 Y北距</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
