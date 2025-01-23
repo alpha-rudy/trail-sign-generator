@@ -13,7 +13,6 @@ RUN echo "dash dash/sh boolean false" | debconf-set-selections; dpkg-reconfigure
 RUN apt-get install -y python3 python3-pip
 
 RUN apt-get install -y \
-    build-essential \
     ghostscript \
     inkscape \
     poppler-utils \
