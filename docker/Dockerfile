@@ -27,7 +27,8 @@ RUN addgroup builder
 RUN useradd -m -d /home/builder -s /bin/bash -g builder -G adm,dialout,sudo,dip,plugdev builder
 
 USER builder
-WORKDIR /home/builder
 RUN mkdir /home/builder/workdir
+WORKDIR /home/builder/workdir
 
-CMD ["/bin/bash", "--login"]
+ENTRYPOINT ["ruby", "generate.rb"]
+CMD []

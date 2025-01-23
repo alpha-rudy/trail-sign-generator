@@ -92,7 +92,7 @@ $ docker build -t rudychung/tsg docker
 To run the docker image, run the following command:
 
 ```shell
-$ docker run -it --rm --user builder -v $PWD:/home/builder/workdir -e TERM=$TERM rudychung/tsg
+$ docker run -it --rm --user builder -v $PWD:/home/builder/workdir -e TERM=$TERM rudychung/tsg 白姑大山/milestone.yaml
 
 builder@3b3c534456eb:~$ cd workdir/
 builder@3b3c534456eb:~/workdir$ ruby generate.rb 白姑大山/milestone.yaml 
@@ -105,6 +105,13 @@ Creating intermediate SVG: 白姑大山/output/intermediate/sign_0001.svg
 Processing pages 1 through 10.
 Page 1
 Page 2
+```
+
+To run the docker image with a GUI, run the following command:
+
+```shell
+$ ./run_tsg_docker.py
+$
 ```
 
 ## 已知限制
