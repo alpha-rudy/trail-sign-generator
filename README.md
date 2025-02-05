@@ -78,6 +78,7 @@ output:
 
 ![PDF 輸出](images/page-output.png)
 
+
 ## docker 使用方式
 
 To build the docker image, run the following command:
@@ -89,11 +90,25 @@ $ docker build -t rudychung/tsg docker
  => => unpacking to docker.io/rudychung/tsg:latest      4.5s
 ```
 
+To run the docker image with a GUI, run the following command:
+
+```shell
+$ ./run_tsg_docker.py
+$
+```
+
 To run the docker image, run the following command:
 
 ```shell
 $ docker run -it --rm --user builder -v $PWD:/home/builder/workdir -e TERM=$TERM rudychung/tsg 白姑大山/milestone.yaml
+## ...
+$
+```
 
+To run the docker image with a shell, run the following command:
+
+```shell
+docker run -it --rm --user builder -v $PWD:/home/builder/workdir -e TERM=$TERM --entrypoint /bin/bash rudychung/tsg --login
 builder@3b3c534456eb:~$ cd workdir/
 builder@3b3c534456eb:~/workdir$ ruby generate.rb 白姑大山/milestone.yaml 
 Reading spec: 
@@ -107,12 +122,6 @@ Page 1
 Page 2
 ```
 
-To run the docker image with a GUI, run the following command:
-
-```shell
-$ ./run_tsg_docker.py
-$
-```
 
 ## 已知限制
 
