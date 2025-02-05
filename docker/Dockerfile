@@ -21,6 +21,9 @@ RUN apt-get install -y \
 RUN rm -rf /var/lib/apt/lists/*
 
 USER root
+ADD ./rootfs /
+RUN fc-cache -f -v
+RUN fc-list | grep "Noto Sans"
 RUN echo '%sudo ALL=(ALL:ALL) NOPASSWD:ALL' >> /etc/sudoers
 RUN addgroup builder
 RUN useradd -m -d /home/builder -s /bin/bash -g builder -G adm,dialout,sudo,dip,plugdev builder
